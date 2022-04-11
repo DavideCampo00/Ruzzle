@@ -53,7 +53,7 @@ public class Model {
 		List<String>risultato=new ArrayList<String>();
 		DizionarioDAO dao = new DizionarioDAO() ;
 		for(String parola:dao.listParola()) {
-			if(this.trovaParola(parola)!=null) {
+			if(this.trovaParola(parola.toUpperCase())!=null) {
 				risultato.add(parola);
 			}
 		}

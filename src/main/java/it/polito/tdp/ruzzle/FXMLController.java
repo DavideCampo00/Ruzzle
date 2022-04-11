@@ -131,9 +131,9 @@ public class FXMLController {
     void handleRisolvi(ActionEvent event) {
     	txtResult.clear();
     	List<String>tutte=this.model.trovaTutte();
-    	txtResult.appendText("Ho trovato"+tutte.size()+" parole");
+    	txtResult.appendText("Ho trovato "+tutte.size()+" parole \n");
     	for(String s:tutte) {
-    		txtResult.appendText(s+"/n");
+    		txtResult.appendText(s+"\n");
     	}
     }
 
